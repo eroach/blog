@@ -1,0 +1,227 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6c71c4;
+}
+
+a[href^="http://"]:not([href*="eroach.github.io/blog/"]):after {
+ content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVJREFUeNqUj9ENwCAIRMX4rxt0Dfb/0TW6gU5AMZGWGrTpS4wYOe4AInJCKeV52CTQgh08rPJ1hM1n1JOlgJzzywIRwRB2wSkOrRfc2KwIo/FmFYnEiWu3FejmETFpoZ8F8w584mckC3Hy7ifiUOflVlwCDAD7aDdkNyNkZQAAAABJRU5ErkJggg==);
+}
+
+a[href^="https://"]:not([href*="eroach.github.io/blog/"]):after {
+    content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVJREFUeNqUj9ENwCAIRMX4rxt0Dfb/0TW6gU5AMZGWGrTpS4wYOe4AInJCKeV52CTQgh08rPJ1hM1n1JOlgJzzywIRwRB2wSkOrRfc2KwIo/FmFYnEiWu3FejmETFpoZ8F8w584mckC3Hy7ifiUOflVlwCDAD7aDdkNyNkZQAAAABJRU5ErkJggg==);
+}
+
+blockquote {
+    background-color: #ecf0f3;
+    color: #4c4c4c;
+}
+
+blockquote, pre {
+    padding: 1em;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+code, pre {
+    background-color: #ecf0f3;
+    font-family: monospace;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #b58900;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 2em auto 1em auto;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul {
+    margin-left: 1em;
+}
+
+#posts ul, #projects ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#all {
+    font-family: Vollkorn, helvetica, arial, clean, sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 33em;
+    padding: 1em;
+}
+
+#footer {
+    border-top: 2px solid #eeeeee;
+    color: #999;
+    font-size: 80%;
+    margin: 2em 0;
+    padding: 1em 0;
+}
+
+#header {
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+    font-size: 125%;
+    margin: 1em auto 0.5em auto;
+    text-shadow: 1px 1px 0px #f2f2f2, 1px 1px 2px #bbbbbb;
+}
+
+.avatar {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -moz-box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #eeeeee;
+    -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #eeeeee;
+    box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #eeeeee;
+    height: 150px; 
+    width: 150px;
+}
+
+#header h1 a {
+    color: #cb4b16;
+    text-decoration: none;
+}
+
+#posts .date:after {
+    content: "\00B7";
+}
+
+#projects li {
+    margin-top: 1em;
+}
+
+#projects .project {
+    display: block;
+    font-weight: bold;
+}
+
+.date {
+    color: #999999;
+    font-family: monospace;
+}
+
+#content {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.post img {
+    min-width:525px;
+    max-width:525px;
+    display: block;
+    margin:25px 0px;
+    -moz-box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #eeeeee;
+    -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #eeeeee;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #eeeeee;
+}
+
+::selection {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration-color: white;
+}
+
+::-moz-selection {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration-color: white;
+}
+
+.footnotes {
+    color: #999;
+    font-size: 80%;
+}
+
+.footnotes hr {
+    margin-left: 0;
+    margin-top: 3em;
+    width: 8em;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+.footnotes ol {
+    margin-left: 3em;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+ul#aliases_columns {
+    -moz-column-count: 3;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 50px;
+    column-count: 3;
+    column-gap: 50px;
+}
+
+ul#aliases_columns li {
+    margin-left: 20px;
+}
+
+.h {
+    background: #ecf0f3;
+    padding: 1px;
+}
+
+.blurb {
+	font-size: 160%;
+	color: #b3b3b3;
+	font-style: italic;
+}
+
+ul.chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.chat li {
+    color: #666666;
+    margin: 0;
+    padding: 12px;
+    line-height: 1.4;
+/*    font-style: italic; */
+}
+
+li.odd {
+    background: #ecf0f3;
+}
